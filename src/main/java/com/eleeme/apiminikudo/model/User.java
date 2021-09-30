@@ -1,18 +1,19 @@
 package com.eleeme.apiminikudo.model;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDateTime;
-import java.util.Set;
-
-@Document("group")
-public class Group {
+@Getter
+@Setter
+@Document("user")
+public class User {
 
     @Id
     private String id;
-    private LocalDateTime createdAt;
     private String name;
-    private Set<String> usersId;
+    private String email;
+    private String password;
 
 }

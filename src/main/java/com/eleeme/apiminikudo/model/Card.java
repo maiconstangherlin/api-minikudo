@@ -15,9 +15,11 @@ public class Card {
 
     @Id
     private String id;
-    private LocalDate date;
     private LocalDateTime createdAt;
+    private LocalDate date;
     private String groupId;
+    private String originUserId;
+    private String targerUserId;
     private String message;
 
 }
