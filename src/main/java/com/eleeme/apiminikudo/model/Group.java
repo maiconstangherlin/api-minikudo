@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 import java.util.Set;
 
-@Document("group")
+@Document("groups")
 public class Group {
 
     @Id
